@@ -1,22 +1,14 @@
-import { useState } from 'react'
 
 import './App.css'
+import Reducer from './components/reducer'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+      <h1>React Hooks</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        
+        <Reducer/>
       </div>
       
     </>
